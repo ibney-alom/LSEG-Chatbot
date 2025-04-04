@@ -1,38 +1,65 @@
 .App {
-  text-align: center;
+  padding: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.chatbot-container {
+  border: 1px solid gray;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.chatbot-header {
+  font-size: 24px;
+  padding: 20px;
+  background-color: blue;
   color: white;
+  margin: 0px;
 }
-
-.App-link {
-  color: #61dafb;
+.chat-window {
+  padding: 20px;
+  height: 70vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  overflow-anchor: auto;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.welcome-message {
+  display: inline-flex;
+  background-color: skyblue;
+  padding: 10px;
+}
+.message-box {
+  display: flex;
+  width: max-content;
+  flex-direction: column;
+  margin-top: 20px;
+  border: 1px solid lightgray;
+}
+.message-header {
+  background-color: skyblue;
+  padding: 10px;
+}
+.option-list {
+  list-style-type: none;
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+}
+.list-data {
+  padding: 10px;
+  border-bottom: 1px solid lightgrey;
+  cursor: pointer;
+}
+.disabled-list {
+  cursor: not-allowed;
+}
+.user-input {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  background-color: lightgray;
+  padding: 10px;
+  width: max-content;
+  margin-top: 10px;
+}
+.chatbot-footer{
+  background-color: lightgray;
+  padding: 10px;
 }
