@@ -98,8 +98,7 @@ function Chatbot() {
               <>
                 <div className="message-box">
                   <div className="message-header">
-                    Stock Price of {selectedStock?.stockName} is
-                    {selectedStock?.price}. Please select an option.
+                    Stock Price of {selectedStock?.stockName} is {selectedStock?.price}. Please select an option.
                   </div>
                   <ul className="option-list">
                     <li onClick={handleMainMenu} className="list-data">
